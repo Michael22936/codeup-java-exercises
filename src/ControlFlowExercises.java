@@ -27,7 +27,7 @@ public class ControlFlowExercises {
 
             j-=5;
         }while (counting);
-        for (int j = 100; j >= -10; j-=5){
+        for (int l = 100; l >= -10; l-=5){
             System.out.println(j);
         }
 
@@ -38,7 +38,7 @@ public class ControlFlowExercises {
             k*=k;
         }while(k < 100000);
 
-        for(long i = 2; i < 100000; i *= i) {
+        for(long m = 2; m < 100000; m *= m) {
             System.out.println(i);
         }
 
