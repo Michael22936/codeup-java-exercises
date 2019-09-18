@@ -46,5 +46,8 @@ public class StringExercise {
             }
             System.out.println("Would you like to continue Y/N");
         }while(input.nextLine().equalsIgnoreCase("y"));
+
+        String cat = "cat"; // "atcay"
+
     }
 }
