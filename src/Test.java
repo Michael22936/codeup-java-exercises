@@ -7,5 +7,4 @@ public class Test {
     public static String sayHello(String str){
         return str.toUpperCase();
     }
-
 }
