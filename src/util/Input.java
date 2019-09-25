@@ -14,15 +14,11 @@ public class Input {
 
     public String getString(){
 
-        System.out.println("Write me a sentence.");
-
         return scanner.nextLine();
 
     }
 
     public boolean yesNo(){
-
-        System.out.println("Pick [ Y | N ]");
 
         String checked = scanner.nextLine();
 
@@ -31,8 +27,6 @@ public class Input {
     }
 
     public int getInt(int min, int max){
-
-        System.out.println("Give me a number.");
 
         if (scanner.hasNextInt()) {
 
@@ -62,8 +56,6 @@ public class Input {
 
      public int getInt(){
 
-         System.out.println("Pick a number between 1 and 10.");
-
         if (scanner.hasNextInt()){
 
         return scanner.nextInt();
@@ -79,8 +71,6 @@ public class Input {
     }
 
      public double getDouble(double min, double max){
-
-         System.out.println("Pick a number between 1.1 and 1.5.");
 
          if (scanner.hasNextDouble()) {
 
