@@ -18,7 +18,23 @@ public class Input {
 
     }
 
+    public String getString(String prompt){
+
+        if (prompt.isEmpty()){
+
+            System.out.println("Type something: ");
+
+        }
+
+        System.out.println(prompt);
+
+        return getString();
+
+    }
+
     public boolean yesNo(){
+
+        System.out.println("Pick [ Y | N ]");
 
         String checked = scanner.nextLine();
 
@@ -27,6 +43,8 @@ public class Input {
     }
 
     public int getInt(int min, int max){
+
+        System.out.println("Pick a number between 1 and 10.");
 
         if (scanner.hasNextInt()) {
 
@@ -56,6 +74,8 @@ public class Input {
 
      public int getInt(){
 
+         System.out.println("Give me a number.");
+
         if (scanner.hasNextInt()){
 
         return scanner.nextInt();
@@ -64,13 +84,17 @@ public class Input {
         return getInt();
      }
 
-    public double getDouble(){
+    public double getDouble(String prompt){
+
+        System.out.println(prompt);
 
             return scanner.nextDouble();
 
     }
 
      public double getDouble(double min, double max){
+
+         System.out.println("Pick a number between 1.1 and 1.5.");
 
          if (scanner.hasNextDouble()) {
 

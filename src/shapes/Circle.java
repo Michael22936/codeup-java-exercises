@@ -1,34 +1,25 @@
 package shapes;
 
-import util.Input;
 
 public class Circle {
 
-    Input input = new Input();
-
     private double radius;
 
-    public Circle(){
+    public Circle(double radius){
 
-        System.out.println("Enter in a radius.");
-
-        radius = input.getDouble();
+        this.radius = radius;
 
     }
 
     public double getArea(){
 
-       double area = Math.PI * radius * radius;
-
-        return area;
+       return Math.PI * radius * radius;
 
     }
 
     public double getCircumference(){
 
-        double circumference = 2 * Math.PI * radius;
-
-        return circumference;
+        return 2 * Math.PI * radius;
 
     }
 
