@@ -15,7 +15,7 @@ public class MoviesApplication {
 
             userInput = input.getInt(0, 5);
 
-            willContinue = processChoice();
+            willContinue = processChoice(userInput);
 
             System.out.println(userInput);
 
