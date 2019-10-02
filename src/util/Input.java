@@ -72,25 +72,27 @@ public class Input {
 
     }
 
-     public int getInt(){
+//     public int getInt(){
+//
+//        int input = scanner.nextInt();
+//
+//         System.out.println("Give me a number.");
+//
+//        if (scanner.hasNextInt()){
+//
+//        return scanner.nextInt();
+//
+//        }
+//        return input;
+//     }
 
-         System.out.println("Give me a number.");
-
-        if (scanner.hasNextInt()){
-
-        return scanner.nextInt();
-
-        }
-        return getInt();
-     }
-
-    public double getDouble(String prompt){
-
-        System.out.println(prompt);
-
-            return scanner.nextDouble();
-
-    }
+//    public double getDouble(String prompt){
+//
+//        System.out.println(prompt);
+//
+//            return scanner.nextDouble();
+//
+//    }
 
      public double getDouble(double min, double max){
 
@@ -121,5 +123,29 @@ public class Input {
          }
 
      }
+    public int getInt() {
+        int input;
 
+        try {
+            System.out.println("Give me a number.");
+            input = Integer.valueOf(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("invalid input");
+            return getInt();
+        }
+        return input;
+    }
+    public double getDouble(String prompt) {
+        System.out.println(prompt);
+
+        double input;
+
+        try {
+            input = Double.valueOf(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("invalid input");
+            return getDouble(prompt);
+        }
+        return input;
+    }
 }
