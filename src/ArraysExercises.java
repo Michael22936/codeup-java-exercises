@@ -22,6 +22,7 @@ public class ArraysExercises {
 
     }
 
+    //a method to allow someone to added a new person to the array without hard coding it
     static Person[] addPerson(Person [] add, Person name){
         Person[] newPerson = Arrays.copyOf(add, add.length+1);
 
